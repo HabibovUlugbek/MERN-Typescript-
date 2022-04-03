@@ -1,0 +1,28 @@
+
+@api = http://localhost:5000
+GET {{api}}/videos
+
+###
+GET {{api}}/videos/624978969f133c6f447103ca
+
+### Create a video
+POST {{api}}/videos 
+content-type: application/json
+
+{
+    "url": "https://youtu.cxcsadffds/Xw",
+    "title": "just code? (Music)",
+    "description": "This is acodeing."
+}
+
+###
+DELETE {{api}}/videos/624978969f133c6f447103ca
+
+###
+PUT {{api}}/videos/624977ba375acac9281a
+content-type: application/json
+
+{
+    "title": "cidoing games",
+    "description": "Tabout the games."
+}
