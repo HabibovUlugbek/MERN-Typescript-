@@ -10,7 +10,7 @@ export const createVideos: RequestHandler = async (req, res) => {
 
   const video = new Videos(req.body);
   const savedVideo = await video.save();
-  res.json(savedVideo);
+  res.status(200).json(savedVideo);
 };
 
 export const getVideos: RequestHandler = async (req, res) => {
